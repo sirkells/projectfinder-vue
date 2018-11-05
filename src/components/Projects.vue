@@ -7,8 +7,8 @@
               <h4 class="card-title">{{post.title}}</h4>
               <h6 class="card-subtitle mb-2 text-muted">{{ post.region.bundesland }}</h6>
               <p class="card-text">{{ post.description.slice(0,500) }}</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <a href="#" class="card-link">{{post.bereich.group}}</a>
+              <a href="#" class="card-link">{{post.bereich.group_type}}</a>
             </div>
           </div>
         </div>
