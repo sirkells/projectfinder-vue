@@ -4,7 +4,7 @@
         <div v-for="(post, index) in posts.project_lists" :key="index">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">{{post.title}}</h4>
+              <h4 class="card-title"><a :href="post.url" target="_blank"><b>{{ post.title }}</b></a></h4>
               <h6 class="card-subtitle mb-2 text-muted">{{ post.region.bundesland }}</h6>
               <p class="card-text">{{ post.description.slice(0,500) }}</p>
               <a href="#" class="card-link">{{post.bereich.group}}</a>
@@ -67,8 +67,8 @@ import axios from "axios/dist/axios.min.js";
   },
   mounted() {
     axios
-      .get('http://127.0.0.1:5000/home')
-      .then(response => (this.info = response))
+      .get("http://127.0.0.1:5000/home")
+      .then(response => (this.info = response));
   }
 };
 </script>

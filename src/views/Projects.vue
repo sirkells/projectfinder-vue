@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <img alt="Vue logo" src="../assets/logo.png">
+    
     <Projects msg="Welcome to Your Projects Page"/>
   </div>
 </template>
