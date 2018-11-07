@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     
-    <Projects msg="Welcome to Your Projects Page"/>
+    <Projects msg="Welcome to Your Projects list  Page"/>
   </div>
 </template>
 
